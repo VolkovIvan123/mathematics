@@ -1,0 +1,154 @@
+// Переменные цвета  
+$background-color: #FFFFFF;  
+$primary-color: #1A5CE5;  
+$primary-hover-color: #054c97; // Более темный оттенок для наведения  
+$secondary-color: #637087;  
+$button-light-bg: #ffffff;  
+$button-light-border: #d4d4d4;  
+$button-light-hover-bg: #c5c3c3;  
+
+// Основные стили  
+body {  
+    background-color: $background-color;  
+    font-family: Manrope, sans-serif;  
+}  
+
+h1, h2, h3 {  
+    font-weight: bold;  
+}  
+
+h2 {  
+    margin-top: 20px;  
+}  
+
+h3 {  
+    margin-top: 30px;  
+}  
+
+// Прогресс-бар  
+.progress {  
+    height: 20px;  
+    border-radius: 15px;  
+}  
+
+// Центрирование элементов  
+.text-left {  
+    text-align: left; // Выравнивание текста по левому краю  
+    margin-top: 20px;  
+}  
+
+// Кнопки  
+.btn {  
+    border-radius: 15px; // Закругляем все кнопки  
+    margin-right: 10px; // Отступ между кнопками  
+
+    &.btn-light {  
+        background-color: $button-light-bg;  
+        border: 1px solid $button-light-border;  
+        
+        &:hover {  
+            background-color: $button-light-hover-bg;  
+        }  
+    }  
+
+    &.btn-secondary {  
+        background-color: $secondary-color;  
+        color: white;  
+        
+        &:hover {  
+            background-color: #054c97; // Темный оттенок для наведения  
+        }  
+    }  
+
+    &.btn-primary {  
+        background-color: $primary-color;  
+        color: white;  
+        
+        &:hover {  
+            background-color: $primary-hover-color;  
+        }  
+    }  
+}  
+
+// Контейнер для вопросов  
+.question-container {  
+    margin-top: 30px;  
+    border-radius: 15px;  
+    background-color: #fff;  
+    padding: 15px;  
+}  
+
+// Текстовые поля  
+.form-control {  
+    border-radius: 15px;  
+}  
+
+// Стили для пошаговых решений  
+.list-group-item {  
+    position: relative;  
+    padding: 15px;  
+
+    .btn-link {  
+        position: absolute;  
+        right: 15px;  
+        top: 10px;  
+        color: #007bff;  
+
+        &:hover {  
+            text-decoration: underline;  
+        }  
+    }  
+
+    p {  
+        margin-top: 10px;  
+        font-size: 14px;  
+        display: none;  
+
+        // Эффект при открытии  
+        &.active {  
+            display: block;  
+        }  
+    }  
+}  
+
+// Стиль для контейнера страницы  
+.container {  
+    margin-top: 50px;  
+    text-align: left; // Выровнять текст по левому краю  
+}  
+
+// Параметры для навигационной панели  
+.navbar {  
+    background-color: #FFFFFF;  
+
+    .navbar-nav .nav-item {  
+        margin-right: 20px;  
+    }  
+
+    .logo-img {  
+        width: 40px;  
+        height: auto;  
+        margin-right: 10px;  
+    }  
+}  
+
+// Кнопка "Купить Pro"  
+.btn-pro {  
+    background-color: #007bff;  
+    color: white;  
+    border-radius: 15px;  
+    padding: 10px 20px;  
+
+    &:hover {  
+        background-color: #0056b3;  
+        color: white;  
+    }  
+}  
+
+// Пример использования кнопок  
+.button-container {  
+    padding: 10px 0; // Отступ на контейнер кнопок  
+    .btn {  
+        margin-bottom: 10px; // Отступ между кнопками по вертикали  
+    }  
+}
